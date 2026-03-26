@@ -110,7 +110,7 @@ function initHeroBackground() {
     let model = null;
 
     const loader = new GLTFLoader();
-    loader.load('models/scene.glb', (gltf) => {
+    loader.load('https://github.com/Cheng-cly/owl-current/releases/download/v1.0/hero_bg.glb', (gltf) => {
         model = gltf.scene;
         scene.add(model);
         console.log('📦 背景模型加载成功');
