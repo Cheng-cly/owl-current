@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Owl Current | Owl Science · The Night Spirit</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 外部样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Three.js 导入映射 -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
+            }
+        }
+    </script>
+    <!-- 主脚本模块 -->
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <div id="hero-3d-background"></div>
+    <div class="container">
+        <!-- 导航栏 -->
+        <div class="navbar">
+            <div class="logo">Owl Current</div>
+            <div class="nav-links">
+                <a href="#">Biology</a>
+                <a href="#">Adaptations</a>
+                <a href="#">Conservation</a>
+                <a href="#">Research</a>
+                <a href="#">About us</a>
+                <div class="more-power-badge">NocturnalWonders</div>
+            </div>
+        </div>
+
+        <!-- Hero 区域 -->
+        <div class="hero">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <i class="fas fa-moon" style="margin-right: 6px;"></i> Night Hunter · Eco Guardian
+                </div>
+                <h1>Experience the mystery<br>of Owls.</h1>
+                <p class="hero-description"></p>
+                <button class="btn-primary">Exploring the World of Owls <i class="fas fa-feather-alt"></i></button>
+            </div>
+
+            <div class="hero-right">
+                <div class="more-savings-card">
+                    <h3>Silent Flight<br>Ultimate silence</h3>
+                    <p>Special wing edge, flight noise below 20 decibels</p>
+                </div>
+                <div class="pagination">
+                    <div class="page-indicator">1/5</div>
+                    <div class="page-dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 四张核心科普卡片 -->
+        <div class="features-section">
+            <div class="section-subhead">
+                <h2>The extraordinary talent of the Night Elves</h2>
+                <p>Millions of Years of Evolution: The Survival Wisdom of the Dark Night King</p>
+            </div>
+            <div class="cards-grid">
+                <div class="feature-card" id="owl-card-3d">
+                    <h3>Tubular Eyes</h3>
+                    <p>The retina is filled with rod cells and is 100 times more sensitive to light than humans, accurately locating prey in almost all black environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon"><i class="fas fa-feather-alt"></i></div>
+                    <h3>Silent Flight</h3>
+                    <p>Feather front comb like structure+velvet like surface, eliminating air turbulence and achieving ghostly silent raids.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="card-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Natural Pest Control</h3>
+                    <p>A barn owl can prey on over 1000 rodents per year, guarding the natural balance between farmland and forests.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 猫头鹰深度科普 + 数据块 -->
+        <div class="info-block">
+            <div class="info-text">
+                <h3>Night Messenger · Evolutionary Miracle</h3>
+                <p>Owls have unique feather structures and extraordinary sensory systems. Their eyes are tubular and cannot rotate, thus evolving an astonishing 270 degree neck flexibility.<br>
+                Most owls are nocturnal and rely on their sharp hearing and almost silent wings to hunt. From the Arctic snowy owl to the Southeast Asian woodpecker, they have adapted to diverse habitats such as forests, grasslands, and deserts.</p>
+                <p><strong style="color:#E0B83E;">✓ Over 200 species distributed globally &nbsp;|&nbsp; ✓ The longest lifespan is about 25 years &nbsp;|&nbsp; ✓ Head rotation range 270 °</strong></p>
+            </div>
+            <div class="info-highlight">
+                <!-- 视频背景（自动循环播放，静音） -->
+                <video autoplay loop muted playsinline class="bg-video">
+                    <source src="assets/owl.mp4" type="video/mp4">
+                <!-- 如果视频格式是其他，请修改后缀，例如 .mov 或 .webm -->
+                </video>
+                <!-- 原有文字内容（会显示在视频上方） -->
+                <div class="kv-large"><span class="counter-num">200+</span></div>
+                <span>Existing owl species</span>
+                <div class="small-label">🌍 Biodiversity hotspots 🌙</div>
+                <p style="font-size:13px; margin-top:18px; color:#C9E0FF;">From tropical rainforests to polar tundra, owls can be found everywhere</p>
+            </div>
+        </div>
+
+        <!-- 号召 banner -->
+        <div class="future-banner">
+            <h4>Join the <span>Owl Conservation</span> Movement</h4>
+            <a href="scene.html" class="btn-outline-light" style="text-decoration: none;">
+                Get Involved <i class="fas fa-heart"></i>
+            </a>
+            <div style="margin-top: 20px; font-size: 14px; color:#e0c084;">Protecting nocturnal predators, maintaining ecological balance, and joining citizen science</div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            <p>© 2025 Owl Current — Defend the night elves and spread natural wisdom.Biology · Adaptations · Conservation · Research</p>
+            <p style="margin-top: 10px; letter-spacing: 0.5px;"><i class="fas fa-owl"></i> Silent Flight, Sharp Eyes, Ecological Foundation</p>
+        </div>
+    </div>
+    <div class="mouse-glow"></div>
+</body>
+</html>
